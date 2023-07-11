@@ -32,7 +32,7 @@ body {
 input[type="text"] {
   height: 70px;
   width: 250px;
-  background-color: rgba(8, 7, 7, 0.911);
+  background-color: rgb(109, 106, 108);
   border: 0px;
   color: #f7f5f5;
   text-align: right;
@@ -54,11 +54,11 @@ input[type="text"] {
 }
 
 #backspace {
-  color: #000000;
+  color: #dcf30a;
 }
 
 button {
-  margin: 2px;
+  margin: 5px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
@@ -75,4 +75,12 @@ button:active {
 
 .highlight {
   background: #2a49d180;
+}
+
+.title{
+
+    background-color: #f7f5f5;
+    text-align: center;
+    color:darkblue;
+    
 }

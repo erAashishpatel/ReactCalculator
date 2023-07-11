@@ -16,6 +16,7 @@ const App = () => {
 
   const calculate = () => {
     try {
+      
       setResult(eval(result).toString());
     } catch (err) {
       setResult("Error!!");
@@ -24,19 +25,25 @@ const App = () => {
 
   return (
     <div className="container">
+      <div className="calculator-title">
+        <div className="title">
+          <h1> CALCULATOR</h1>
+        </div>
+      </div>
       <form onClick={handleClick}>
         <input type="text" value={result} />
       </form>
+      
       <div className="keypad">
         <button className="highlight" onClick={clear} id="clear">
-          Clear
+          CE
         </button>
         <button className="highlight" onClick={backspace} id="backspace">
           C
         </button>
 
         <button className="highlight" name="/" onClick={handleClick}>
-          /
+          &divide;
         </button>
         <button name="7" onClick={handleClick}>
           7
@@ -48,7 +55,7 @@ const App = () => {
           9
         </button>
         <button className="highlight" name="*" onClick={handleClick}>
-          *
+          &times;
         </button>
         <button name="4" onClick={handleClick}>
           4
